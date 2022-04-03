@@ -1,7 +1,8 @@
-import { Switch } from 'antd';
+import { Space, Switch, Typography } from 'antd';
 import Layout from 'antd/lib/layout/layout';
 import React from 'react';
 import { Route } from 'react-router';
+import { Link } from 'react-router-dom';
 import './App.css';
 import { Navbar, Homepage, Exchanges, Cryptocurrencies, News, CryptoDetails } from "./components"
 
@@ -34,9 +35,19 @@ function App() {
           </div>
 
         </Layout>
-      </div>
-      <div className='foother'>
-
+        <div className='footer'>
+          <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2022
+            <Link to="/">
+              Cryptocurrencies
+            </Link> <br />
+            All Rights Reserved.
+          </Typography.Title>
+          <Space>
+            <Link to="/">Home</Link>
+            <Link to="/exchanges">Exchanges</Link>
+            <Link to="/news">News</Link>
+          </Space>
+        </div>
       </div>
     </div>
   );

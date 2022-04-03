@@ -6,11 +6,11 @@ import { HomeOutlined, FundOutlined, BulbOutlined, MoneyCollectOutlined, MenuOut
 
 const Navbar = () => {
   return (
-    <div className='navbar-container'>
+    <div className='nav-container'>
         <div className='logo-container'>
             <Avatar src={icon} size="large"/>
             <Typography.Title level={2} className="logo">
-                <Link to="">Cryptocurrency app</Link>
+                <Link to="">Cryptocurrency</Link>
             </Typography.Title>
         </div>
         <Menu theme="dark">
