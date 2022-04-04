@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className='logo-container'>
             <Avatar src={icon} size="large"/>
             <Typography.Title level={2} className="logo">
-                <Link to="">Cryptocurrency</Link>
+                <Link to="/">CryptoApp</Link>
             </Typography.Title>
         </div>
         <Menu theme="dark">
