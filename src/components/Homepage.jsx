@@ -1,5 +1,6 @@
 import { Col, Row, Statistic, Typography } from 'antd'
 import React from 'react'
+import { useGetCryptosQuery } from "../services/cryptoApi"
 
 const Homepage = () => {
   const { Title } = Typography
