@@ -2,8 +2,10 @@ import { Col, Row, Statistic, Typography } from 'antd'
 import React from 'react'
 import { useGetCryptosQuery } from "../services/cryptoApi"
 
+const { Title } = Typography;
 const Homepage = () => {
-  const { Title } = Typography
+  const {data, isFetching} = useGetCryptosQuery()
+  console.log(data);
   return (
     <div>
         <Title level={2} className="heading">Global Crypto Stats</Title>
