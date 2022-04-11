@@ -24,7 +24,7 @@ const Cryptocurrencies = ({simplified}) => {
           <Input placeholder='Search Cryptocurrency' onChange={(e) => setSearchTerm(e.target.value)} />
         </div>
       )}
-      <Row gutter={[32, 32]} className="crypto-class-container">
+      <Row gutter={[20, 20]} className="crypto-class-container">
         {cryptos?.map((currency) => (
           <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency.id}>
             <Link to={`/crypto/${currency.id}`}>
