@@ -34,7 +34,7 @@ const CryptoDetails = () => {
   ];
 
   return (
-    <Col className='coin-details-container'>
+    <Col className='coin-detail-container'>
       <Col className="coin-heading-container">
         <Title level={2} className="coin-name">
           {data?.data?.coin.name} ({data?.data?.coin.symbol}) Price
@@ -53,7 +53,7 @@ const CryptoDetails = () => {
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
             <Title level={3} className="coin-details-heading">{cryptoDetails?.name} Value Statistics</Title>
-            <p>An overview showing the statistics of {cryptoDetails?.name}, such as the base and quote currency, the rank, and trading volume.</p>
+            <p>An overview showing the statistics of {cryptoDetails?.name}</p>
           </Col>
           {stats.map(({ icon, title, value }) => (
           <Col className="coin-stats">
