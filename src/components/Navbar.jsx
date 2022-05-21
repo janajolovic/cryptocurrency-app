@@ -31,8 +31,12 @@ const Navbar = () => {
             <Typography.Title level={2} className="logo">
                 <Link to="/">CryptoApp</Link>
             </Typography.Title>
+            <Button className='menu-control-container' onClick={() => setActiveMenu(!activeMenu)}>
+                <MenuOutlined />
+            </Button>
         </div>
-        <Menu theme="dark">
+        {activeMenu && (
+            <Menu theme="dark">
             <Menu.Item icon={<HomeOutlined />} key='1'>
                 <Link to="/">Home</Link>
             </Menu.Item>
@@ -46,6 +50,7 @@ const Navbar = () => {
                 <Link to="/news">News</Link>
             </Menu.Item>
         </Menu>
+        )}
     </div>
   )
 }
