@@ -2,6 +2,7 @@ import React from 'react'
 import {useGetCryptoExchangesQuery} from '../services/cryptoApi'
 import { Col, Row, Typography, Select, Collapse } from 'antd';
 import millify from 'millify';
+import Loader from './Loader';
 
 const { Text } = Typography;
 const { Panel } = Collapse;
@@ -10,7 +11,7 @@ const Exchanges = () => {
   const {data, isFetching} = useGetCryptoExchangesQuery();
   const exchangesList = data?.data?.exhanges;
 
-  if (isFetching) return 'Loading...';
+  if (isFetching) return <Loader />
 
   return (
     <>
